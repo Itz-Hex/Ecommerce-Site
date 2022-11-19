@@ -90,7 +90,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[product-screenshot]: Ecommerce-Site.png
+[product-screenshot]: ShopSite.png
 [HTML]: https://img.shields.io/badge/HTML-000000?style=for-the-badge&logo=html5&logoColor=orange
 [HTML-url]: https://nodejs.org
 [CSS]: https://img.shields.io/badge/css-000000?style=for-the-badge&logo=css3&logoColor=cyan
