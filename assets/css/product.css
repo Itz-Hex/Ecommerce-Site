@@ -1,0 +1,64 @@
+.parallax {
+    /* The image used */
+    background-image: url("https://picsum.photos/1920/1080");
+
+    /* Set a specific height */
+    min-height: 600px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 100px 12px;
+    max-width: 1200px;
+    gap: 50px;
+}
+
+.content h1,
+.content h3,
+.content p {
+    margin: 12px 0;
+}
+
+.content .content-image {
+    align-self: center;
+}
+
+.content .hl {
+    margin: 20px 0;
+    min-height: 100%;
+    border-left: 1px solid var(--secondary)
+}
+
+.content .content-body .productDetails {
+    margin: 0;
+}
+
+.content .content-body .order-btn {
+    background-color: var(--accent);
+    border: none;
+    outline: none;
+    color: var(--primary);
+    padding: 12px 48px;
+    font-size: 24px;
+    font-weight: 700;
+    border: 3px solid transparent;
+    width: 100%;
+    margin-top: 24px;
+
+    transition: all 0.3s ease;
+}
+
+.content .content-body .order-btn:hover {
+    border: 3px solid var(--accent);
+    background-color: transparent;
+    color: var(--accent);
+    transform: scale(1.15);
+}

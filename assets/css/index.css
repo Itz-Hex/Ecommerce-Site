@@ -1,0 +1,62 @@
+.parallax {
+    /* The image used */
+    background-image: url("https://picsum.photos/1920/1080");
+
+    /* Set a specific height */
+    min-height: 600px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto 12px;
+    max-width: 1200px;
+}
+
+.content .header {
+    margin: 36px;
+}
+
+.content .header .hl {
+    width: 100%;
+    border-bottom: 1px solid var(--secondary);
+    margin: 12px auto;
+}
+
+.content .content-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px
+}
+
+.content .content-body .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 12px;
+    text-align: center;
+    padding-bottom: 12px;
+
+    transition: all 0.3s ease;
+}
+
+.content .content-body .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.content .content-body .price {
+    color: var(--accent);
+    font-size: 22px;
+}
+
+.content .content-body .card p {
+    margin: 0 30px;
+}
