@@ -1,0 +1,48 @@
+.parallax {
+    /* The image used */
+    background-image: url("https://picsum.photos/1920/1080");
+
+    /* Set a specific height */
+    min-height: 600px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto 12px;
+    max-width: 1200px;
+}
+
+.content .header {
+    margin: 36px;
+}
+
+.content .hl {
+    width: 80%;
+    border-bottom: 1px solid var(--secondary);
+    margin: 12px auto;
+}
+
+.content .content-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.content .content-body .section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    margin: 60px;
+}

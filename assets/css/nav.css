@@ -1,0 +1,110 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav {
+    background-color: transparent;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 16px;
+    user-select: none;
+}
+
+nav .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: ceter;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav .nav-links .link {
+    margin: 0 32px;
+
+    transition: all 0.3s ease;
+}
+
+nav .nav-links .link:hover {
+    transform: scale(1.25);
+}
+
+nav .nav-links .link a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 18px;
+
+    transition: all 0.3s ease;
+}
+
+nav .nav-links .link:hover a {
+    color: var(--accent);
+}
+
+nav .nav-cta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .nav-cta i {
+    font-size: 24px;
+    margin: 0 12px;
+    position: relative;
+
+    transition: all 0.3s ease;
+}
+
+nav .nav-cta i:hover {
+    color: var(--accent);
+    font-size: 30px;
+}
+
+nav .nav-cta .search i .input-box {
+    position: absolute;
+    top: 80px;
+    right: -7px;
+    outline: none;
+    border: none;
+    background-color: var(--accent);
+    color: var(--primary);
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 4px;
+
+    transition: all 0.3s ease;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav .nav-cta .search i .input-box input {
+    border: none;
+    outline: none;
+    padding: 4px 8px;
+    font-size: 18px;
+}
+
+nav .nav-cta .search i .input-box::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: var(--accent);
+    right: 10px;
+    top: -6px;
+    transform: rotate(45deg);
+    z-index: -10;
+}
+
+nav .nav-cta .search i:hover .input-box {
+    opacity: 1;
+    visibility: visible;
+    top: 40px;
+}
